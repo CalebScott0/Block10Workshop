@@ -1,0 +1,395 @@
+body {
+  max-height: 90vh;
+  /* max-width: 80%; */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 30% 60% 1fr;
+  /* grid-template-areas:
+    "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item5"; */
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.grid {
+  background-color: rgb(10, 177, 177);
+  display: grid;
+  position: relative;
+}
+.item1 {
+  grid-area: item1;
+  /* display: grid; */
+  grid-column: 1;
+  grid-row: 1;
+  /* position: relative;  
+  z-index: 1; */
+  margin-top: 2rem;
+}
+
+.item2 {
+  grid-area: item2;
+  /* display: grid; */
+  grid-column: 2;
+  grid-row: 1;
+  /* position: relative;
+  z-index: 1; */
+  margin-top: 2rem;
+}
+.item3 {
+  grid-area: item3;
+  /* display: grid; */
+  grid-column: 3;
+  grid-row: 1;
+  /* position: relative;
+  z-index: 1; */
+  margin-top: 2rem;
+}
+.item4 {
+  grid-area: item4;
+  /* display: grid; */
+  grid-column: 1 / 4;
+  grid-row: 2;
+  /* position: relative;
+  z-index: 1; */
+}
+.item5 {
+  grid-area: item5;
+  /* display: grid; */
+  grid-column: 1 / 4;
+  grid-row: 3;
+  /* position: relative;
+  z-index: 1; */
+  /* how to get this to display without min-height */
+  min-height: 1rem;
+  background-color: rgba(172, 255, 47, 0.578);
+}
+
+.circle1 {
+  position: relative;
+  /* z-index: 1; */
+  bottom: 680px;
+  left: 80px;
+  height: 40px;
+  width: 40px;
+  background-color: pink;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle2 {
+  /* z-index: 1; */
+  position: relative;
+  bottom: 660px;
+  right: 220px;
+  height: 110px;
+  width: 110px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle3 {
+  /* z-index: 1; */
+  position: relative;
+  bottom: 545px;
+  right: 745px;
+  height: 40px;
+  width: 40px;
+  background-color: pink;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle4 {
+  position: relative;
+  /* z-index: 1; */
+  bottom: 570px;
+  left: 180px;
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle5 {
+  position: relative;
+  /* z-index: 1; */
+  bottom: 700px;
+  right: 65px;
+  height: 110px;
+  width: 110px;
+  background-color: pink;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle6 {
+  position: relative;
+  /* z-index: 1; */
+  bottom: 800px;
+  right: 320px;
+  height: 40px;
+  width: 40px;
+  background-color: pink;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle1 {
+  position: relative;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  bottom: 836px;
+  left: 612px;
+  border-left: 220px solid transparent;
+  border-right: 220px solid transparent;
+  border-bottom: 520px solid green;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle2 {
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  bottom: 646px;
+  left: 442px;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 330px solid yellowgreen;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: relative;
+  z-index: 4;
+  right: 822px;
+  bottom: 450px;
+  width: 700px;
+}
+
+@media (min-width: 1680px) {
+  body {
+    max-width: 80vw;
+    margin-left: 6rem;
+  }
+  .circle1 {
+    bottom: 860px;
+    height: 50px;
+    width: 50px;
+  }
+  .circle2 {
+    bottom: 805px;
+    height: 120px;
+    width: 120px;
+  }
+  .circle3 {
+    bottom: 680px;
+    right: 850px;
+    height: 50px;
+    width: 50px;
+  }
+  .circle4 {
+    bottom: 695px;
+    height: 50px;
+    width: 50px;
+  }
+  .circle5 {
+    bottom: 835px;
+    right: 70px;
+    height: 120px;
+    width: 120px;
+  }
+  .circle6 {
+    bottom: 980px;
+    right: 380px;
+    height: 50px;
+    width: 50px;
+  }
+  .triangle1 {
+    bottom: 976px;
+    left: 710px;
+    border-left: 230px solid transparent;
+    border-right: 230px solid transparent;
+    border-bottom: 640px solid green;
+  }
+  .triangle2 {
+    bottom: 755px;
+    left: 507px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 420px solid yellowgreen;
+  }
+  img {
+    width: 795px;
+    bottom: 486px;
+    right: 922px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    max-width: 80%;
+    margin-right: 0;
+    margin-left: 6rem;
+    gap: 15px;
+    min-height: 100vh;
+    grid-template-rows: 25% 45% 1fr;
+  }
+  .circle1 {
+    height: 30px;
+    width: 30px;
+    bottom: 540px;
+    left: 55px;
+  }
+  .circle2 {
+    height: 90px;
+    width: 90px;
+    bottom: 525px;
+    right: 160px;
+  }
+  .circle3 {
+    height: 30px;
+    width: 30px;
+    bottom: 428px;
+    right: 520px;
+  }
+  .circle4 {
+    height: 30px;
+    width: 30px;
+    bottom: 450px;
+    left: 115px;
+  }
+  .circle5 {
+    bottom: 555px;
+    right: 55px;
+    height: 90px;
+    width: 90px;
+  }
+  .circle6 {
+    height: 30px;
+    width: 30px;
+    bottom: 647px;
+    right: 214px;
+  }
+  .triangle1 {
+    bottom: 706px;
+    left: 414px;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
+    border-bottom: 450px solid green;
+  }
+  .triangle2 {
+    bottom: 556px;
+    left: 276px;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 300px solid yellowgreen;
+  }
+  img {
+    height: 110px;
+    width: 475px;
+    right: 571px;
+    bottom: 357px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 3rem;
+    grid-template-rows: 30% 45% 1fr;
+    gap: 10px;
+  }
+  .item5 {
+    height: 10px;
+    min-height: 0;
+  }
+  .circle1 {
+    height: 15px;
+    width: 15px;
+    bottom: 240px;
+    left: 28px;
+  }
+  .circle2 {
+    height: 40px;
+    width: 40px;
+    bottom: 235px;
+    right: 70px;
+  }
+  .circle3 {
+    height: 15px;
+    width: 15px;
+    bottom: 195px;
+    right: 250px;
+  }
+
+  .circle4 {
+    height: 15px;
+    width: 15px;
+    bottom: 200px;
+    left: 65px;
+  }
+  .circle5 {
+    bottom: 252px;
+    right: 27px;
+    height: 40px;
+    width: 40px;
+  }
+  .circle6 {
+    height: 15px;
+    width: 15px;
+    bottom: 285px;
+    right: 100px;
+  }
+  .triangle1 {
+    bottom: 301px;
+    left: 204px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 170px solid green;
+  }
+  .triangle2 {
+    bottom: 250px;
+    left: 153px;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 120px solid yellowgreen;
+  }
+  img {
+    height: 55px;
+    width: 235px;
+    right: 274px;
+    bottom: 180px;
+  }
+}
+form {
+  margin-top: 2rem;
+  min-width: 100vh;
+  
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
